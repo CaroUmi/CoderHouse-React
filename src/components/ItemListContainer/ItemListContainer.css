@@ -1,0 +1,9 @@
+.content {
+  background-color: var(--color-p-claro);
+  min-height: 100vh;
+  padding: 3rem;
+
+  h1 {
+    color: black;
+  }
+}

@@ -1,0 +1,129 @@
+.nav-cart {
+	position: relative;
+
+	.cart-quantity {
+
+		.icon {
+			font-size: 1.2rem;
+			color: var(--color-p-oscuro);
+			margin-left: 1rem;
+
+			&:hover {
+				cursor: pointer;
+			}
+		}
+
+		span {
+			color: var(--color-blanco);
+			font-weight: bold;
+			font-size: .8rem;
+			display: inline-block;
+			position: absolute;
+			text-align: center;
+			line-height: .9rem;
+			top: 10px;
+			left: 28px;
+			width: 1rem;
+			height: 1rem;
+			border-radius: 50%;
+			background-color: red;
+
+			&:hover {
+				cursor: pointer;
+			}
+		}
+	}
+}
+
+/* ESTILOS DE CARRITO */
+.cart {
+	display: none;
+	width: 100%;
+	max-width: 500px;
+	height: 100vh;
+	background-color: var(--color-blanco);
+	padding: 2rem;
+	position: fixed;
+	top: 60px;
+	right: 0;
+
+	.header-cart {
+		display: flex;
+		justify-content: space-between;
+	}
+
+	.body-cart {
+
+		.product-cart {
+			display: grid;
+			grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+			grid-template-rows: auto auto;
+			gap: .5rem;
+			text-align: center;
+			align-items: center;
+			border-bottom: 1px solid var(--color-beige);
+			padding: .5rem 0;
+
+			.img-cart {
+				width: 3rem;
+				height: 3rem;
+			}
+
+			.quantity {
+				display: flex;
+				align-items: center;
+				gap: .5rem;
+
+				button {
+					width: 2rem;
+					height: 2rem;
+					border: none;
+
+					i {
+						margin: 0 auto;
+						font-size: .8rem;
+					}
+				}
+			}
+
+			p {
+				margin-bottom: 0;
+			}
+		}
+
+	}
+
+	.footer-cart {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+
+		.cart-total {
+			margin: .7rem auto;
+		}
+
+		.btn-cart {
+			width: 80%;
+			margin: 0 auto;
+		}
+	}
+
+	.remove-product,
+	.close-cart {
+		padding: 0;
+		background-color: transparent;
+		border: none;
+
+		i {
+			margin: 0 auto;
+		}
+	}
+}
+
+.open-cart {
+	display: block;
+}
+
+.close-cart {
+	display: none;
+}
