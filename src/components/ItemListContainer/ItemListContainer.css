@@ -2,6 +2,7 @@
   background-color: var(--color-p-claro);
   min-height: 100vh;
   padding: 3rem;
+  text-align: center;
 
   h1 {
     color: black;

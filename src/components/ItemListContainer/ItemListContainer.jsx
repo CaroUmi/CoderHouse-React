@@ -1,9 +1,9 @@
 import './ItemListContainer.css'
 
-function ItemListContainer() {
+function ItemListContainer({message}) {
   return (
     <div className='content'>
-      <h1>Bienvenidos a mi tienda</h1>
+      <h1>{message}</h1>
     </div>
   )
 }
